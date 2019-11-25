@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2 id="title">JavaScript.</h2>
+
+  <input type="text" id="new-title-input"><button type="button" onclick='newTitle()'>Click Me!</button>
+
+  <script type="text/javascript">
+    function newTitle() {
+      let inputValue = document.getElementById("new-title-input").value; 
+      document.getElementById("title").innerHTML = inputValue
+    }
+  </script>
+</body>
+</html>
