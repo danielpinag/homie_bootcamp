@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <p>Calculator</p>
+
+  <input type="text" id="js-first-number">
+  <button type="button" onclick='execute(sum)'>+</button>
+  <button type="button" onclick='execute(subtraction)'>-</button>
+  <button type="button" onclick='execute(multiplication)'>*</button>
+  <button type="button" onclick='execute(division)'>/</button>
+  <input type="text" id="js-second-number">
+  <p id="js-result">El resultado aparecerá aquí</p>
+
+  <script type="text/javascript">
+    let first;
+    let second;
+    let result;
+
+    function execute(operation) {
+      first = parseInt(document.getElementById("js-first-number").value);
+      second = parseInt(document.getElementById("js-second-number").value);
+      result = operation();
+      if (Number.isNaN(result)) {
+        alert("Debes colocar un número");
+      } else {
+        document.getElementById("js-result").innerHTML = result;
+      }
+    }
+
+    function sum() {
+      return first + second;
+    }
+
+    function subtraction() {
+      return first - second;
+    }
+
+    function multiplication() {
+      return first * second;
+    }
+
+    function division() {
+      return first / second;
+    }
+  </script>
+</body>
+</html>
