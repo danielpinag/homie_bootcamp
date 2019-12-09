@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Favorite Movies</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Movies</h2>
+    <p>Search movies</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Movie Name</th>
+          <th>Year</th>
+          <th>Actors</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody id="js-table-body">
+      </tbody>
+    </table>
+    <button onclick="convert()">Search</button><br>
+    <input type="text" id="js-search-bar">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    function changeUndefined(movieData){
+      if (movieData === undefined) {            
+        return "N/A";
+      }
+      else {
+        return movieData;
+      }
+    };
+    function convert() {
+      let searched = $("#js-search-bar").val();
+      let type = searched;
+      let queryURL = "http://www.omdbapi.com/?s=" + type + "&y=&plot=short&apikey=40e9cece";
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      }).done(function(response) {
+        let movieArrays = response.Search;
+        let movieRow = "";
+        $("#js-table-body").empty()
+        if (movieArrays === undefined) {
+          movieRow = "<div>We can't find what you're looking for :(</div>"
+          return $('#js-table-body').append(movieRow)
+        }
+        movieArrays.forEach(function(movie) {
+          movieRow = 
+          `<tr>
+            <td>${movie.Title}</td>
+            <td>${movie.Year}</td>
+            <td>${changeUndefined(movie.Actors)}</td>
+            <td>${changeUndefined(movie.Country)}</td>
+          </tr>`;
+          $("#js-table-body").append(movieRow);
+        });
+      });
+    };
+  </script>
+</body>
+</html>
