@@ -1,0 +1,166 @@
+body {
+  font-family: "Open Sans", sans-serif; }
+  body .container {
+    display: grid;
+    justify-items: center; }
+    body .container .title {
+      font-size: 18px;
+      color: #4a4a4a;
+      padding-bottom: 25px; }
+    body .container .form {
+      width: 300px;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px; }
+      body .container .form .form-title {
+        display: inline-flex;
+        align-items: center;
+        padding: 5px 0px 20px 5px;
+        color: #4a4a4a;
+        font-size: 16px; }
+      body .container .form .cards-for-pay-images {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 20px; }
+        body .container .form .cards-for-pay-images .active {
+          cursor: pointer;
+          border: solid #917cf7 2px;
+          border-radius: 4px;
+          width: 60px; }
+        body .container .form .cards-for-pay-images img {
+          cursor: pointer;
+          border: solid #cccccc 2px;
+          border-radius: 4px;
+          width: 60px; }
+      body .container .form .data-form {
+        display: inline-flex;
+        justify-content: end;
+        flex-wrap: wrap;
+        background-color: #f9f9f9;
+        padding-left: 15px;
+        width: 285px; }
+        body .container .form .data-form .name-input {
+          font-size: 14px;
+          padding-bottom: 10px; }
+          body .container .form .data-form .name-input input {
+            background-color: #f9f9f9;
+            border: solid #ececec 1px;
+            height: 25px;
+            width: 270px; }
+        body .container .form .data-form .validity-input {
+          font-size: 14px;
+          padding-right: 7.5px;
+          padding-bottom: 10px; }
+          body .container .form .data-form .validity-input input {
+            background-color: #f9f9f9;
+            border: solid #ececec 1px;
+            height: 25px;
+            width: 125px; }
+        body .container .form .data-form .cvc-input {
+          font-size: 14px;
+          padding-left: 7.5px;
+          padding-bottom: 10px; }
+          body .container .form .data-form .cvc-input input {
+            background-color: #f9f9f9;
+            border: solid #ececec 1px;
+            height: 25px;
+            width: 125px; }
+        body .container .form .data-form .card-number-input {
+          font-size: 14px;
+          padding-bottom: 10px; }
+          body .container .form .data-form .card-number-input input {
+            background-color: #f9f9f9;
+            border: solid #ececec 1px;
+            height: 25px;
+            width: 270px; }
+        body .container .form .data-form .zip-code-input {
+          font-size: 14px;
+          padding-bottom: 10px; }
+          body .container .form .data-form .zip-code-input input {
+            background-color: #f9f9f9;
+            border: solid #ececec 1px;
+            height: 25px;
+            width: 125px; }
+        body .container .form .data-form .mastercard-code-input {
+          font-size: 14px;
+          padding: 5px 15px 10px 0px; }
+          body .container .form .data-form .mastercard-code-input input {
+            background-color: #f9f9f9;
+            border: solid #ececec 1px;
+            height: 25px;
+            width: 270px; }
+          body .container .form .data-form .mastercard-code-input .mastercard-code-input-message {
+            color: #9b9b9b;
+            text-align: center; }
+        body .container .form .data-form .save-card-checkbox {
+          font-size: 16px;
+          margin-bottom: 20px;
+          padding: 10px 5px 15px 5px;
+          background-color: #f9f9f9;
+          border: solid #ececec 1px;
+          display: inline-flex;
+          align-items: baseline;
+          justify-content: space-around;
+          width: 255px; }
+          body .container .form .data-form .save-card-checkbox .checkbox-container {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            font-size: 22px;
+            height: 20px;
+            width: 20px;
+            background-color: white;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none; }
+            body .container .form .data-form .save-card-checkbox .checkbox-container input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+              height: 0;
+              width: 0; }
+            body .container .form .data-form .save-card-checkbox .checkbox-container input:checked ~ .checkmark {
+              background-color: #917cf7; }
+            body .container .form .data-form .save-card-checkbox .checkbox-container input:checked ~ .checkmark:after {
+              display: block; }
+            body .container .form .data-form .save-card-checkbox .checkbox-container .checkmark {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 20px;
+              width: 20px;
+              background-color: white;
+              border: solid #917cf7 3px;
+              border-radius: 2px; }
+            body .container .form .data-form .save-card-checkbox .checkbox-container .checkmark:after {
+              content: "";
+              position: absolute;
+              display: none;
+              left: 9px;
+              top: 5px;
+              width: 5px;
+              height: 10px;
+              border: solid white;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+        body .container .form .data-form .pay-button {
+          color: #9b9b9b;
+          padding-bottom: 10px;
+          display: grid; }
+          body .container .form .data-form .pay-button a {
+            background-color: #917cf7;
+            padding: 10px;
+            width: 255px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+          body .container .form .data-form .pay-button div {
+            text-align: center;
+            padding: 10px; }
+
+/*# sourceMappingURL=index.css.map */

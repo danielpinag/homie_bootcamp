@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tarjetas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="public/stylesheets/index.css" type="text/css" media="screen">
+</head>
+<body onload="loadPage()">
+  <div class="container">
+    <div class="title">Elige tu forma de pago</div>
+    <div class="form">
+      <div class="form-title">
+        <img src="./assets/images/purple_dot.png">
+        <div>Tarjeta de crédito o débito</div>
+      </div>
+      <div class="cards-for-pay-images">
+        <img onclick="visaForm()" class="js-visa" src="./assets/images/visa.png">
+        <img onclick="mastercardForm()" class="js-mastercard" src="./assets/images/mastercard.png">
+        <img onclick="amexForm()" class="js-amex" src="./assets/images/amex.png">
+      </div>
+      <div class="js-default-form data-form">
+        <div class="name-input">
+          <div>Nombre completo</div>
+          <input type="text" placeholder="Nombre">
+        </div>
+        <div class="validity-input">
+          <div>Vigencia</div>
+          <input type="text" placeholder="mm/aa">
+        </div>
+        <div class="cvc-input">
+          <div>CVC</div>
+          <input type="text" placeholder="______">
+        </div>
+        <div class="card-number-input">
+          <div>Número de tarjeta</div>
+          <input type="text" placeholder="_____________">
+        </div>
+        <div class="zip-code-input">
+          <div>Código postal</div>
+          <input type="text" placeholder="________">
+        </div>
+        <div class="save-card-checkbox">
+          <label class="checkbox-container">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <div>Guardar tarjeta en cuenta</div>
+        </div>
+      </div>
+      <div class="js-visa-form data-form">
+        <div class="name-input">
+          <div>Nombre completo</div>
+          <input type="text" placeholder="Nombre">
+        </div>
+        <div class="validity-input">
+          <div>Vigencia</div>
+          <input type="text" placeholder="mm/aa">
+        </div>
+        <div class="cvc-input">
+          <div>CVC</div>
+          <input type="text" placeholder="______">
+        </div>
+        <div class="card-number-input">
+          <div>Número de tarjeta</div>
+          <input type="text" placeholder="_____________">
+        </div>
+        <div class="zip-code-input">
+          <div>Código postal</div>
+          <input type="text" placeholder="________">
+        </div>
+        <div class="save-card-checkbox">
+          <label class="checkbox-container">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <div>Guardar tarjeta en cuenta</div>
+        </div>
+        <div class="pay-button">
+          <a href="https://www.google.com/">Pagar</a>
+          <div>* Se cobrará el 2.65% por comisión</div>
+        </div>
+      </div>
+      <div class="js-mastercard-form data-form">
+        <div class="name-input">
+          <div>Nombre completo</div>
+          <input type="text" placeholder="Nombre">
+        </div>
+        <div class="validity-input">
+          <div>Vigencia</div>
+          <input type="text" placeholder="mm/aa">
+        </div>
+        <div class="cvc-input">
+          <div>CVC</div>
+          <input type="text" placeholder="______">
+        </div>
+        <div class="card-number-input">
+          <div>Número de tarjeta</div>
+          <input type="text" placeholder="_____________">
+        </div>
+        <div class="zip-code-input">
+          <div>Código postal</div>
+          <input type="text" placeholder="________">
+        </div>
+        <div class="mastercard-code-input">
+          <div>Tienes un código MasterCard? escríbelo aquí</div>
+          <input type="text">
+          <div class="mastercard-code-input-message">
+            Utiliza el código HOMIEMC al pagar con tu tarjeta MASTERCARD y recibe beneficios exclusivos.
+          </div>
+        </div>
+        <div class="save-card-checkbox">
+          <label class="checkbox-container">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <div>Guardar tarjeta en cuenta</div>
+        </div>
+        <div class="pay-button">
+          <a href="https://www.google.com/">Pagar</a>
+          <div>* Se cobrará el 2.65% por comisión</div>
+        </div>
+      </div>
+      <div class="js-amex-form data-form">
+        <div class="name-input">
+          <div>Nombre completo</div>
+          <input type="text" placeholder="Nombre">
+        </div>
+        <div class="validity-input">
+          <div>Vigencia</div>
+          <input type="text" placeholder="mm/aa">
+        </div>
+        <div class="cvc-input">
+          <div>CVC</div>
+          <input type="text" placeholder="______">
+        </div>
+        <div class="card-number-input">
+          <div>Número de tarjeta</div>
+          <input type="text" placeholder="_____________">
+        </div>
+        <div class="zip-code-input">
+          <div>Código postal</div>
+          <input type="text" placeholder="________">
+        </div>
+        <div class="save-card-checkbox">
+          <label class="checkbox-container">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <div>Guardar tarjeta en cuenta</div>
+        </div>
+        <div class="pay-button">
+          <a href="https://www.google.com/">Pagar</a>
+          <div>* Se cobrará el 3.65% por comisión</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./assets/scripts/index.js"></script>
+</body>
+</html>
