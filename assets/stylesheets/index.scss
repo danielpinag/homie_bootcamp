@@ -1,0 +1,74 @@
+body {
+  font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .title {
+      font-size: 36px;
+      font-weight: 300;
+      color: #333;
+      padding: 40px 0px 50px 0px;
+    }
+    .home-card {
+      border: solid #d3d3d3 1px;
+      display: inline-flex;
+      height: 350px;
+      width: 1200px;
+
+      .home-image {
+        background-image: url(../../assets/images/building.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 75%;
+        box-shadow: inset 0px -125px 50px 0px rgba(0, 0, 0, 0.25);
+      }
+      .home-info {
+        width: 25%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px 0px 15px 25px;
+
+        .home-price {
+          font-size: 12px;
+          color: #999;
+          padding: 15px 0px 15px 0px;
+
+          .price {
+            font-size: 20px;
+            color: black;
+          }
+        }
+        .home-location {
+          padding: 15px 0px 15px 0px;
+
+          div {
+            font-size: 14px;
+            color: #999;
+          }
+          .location {
+            width: 235px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 18px;
+            color: #2a63cb;
+          }
+        }
+        .home-description {
+          padding: 15px 0px 15px 0px;
+
+          .description {
+            height: 120px;
+            color: #999;
+            font-size: 15px;
+            font-weight: bold;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
