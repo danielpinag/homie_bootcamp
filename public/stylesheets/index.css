@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+  letter-spacing: .5px;
+  word-spacing: 2px;
+  display: flex;
+  justify-content: center; }
+  body .container {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    body .container .header-zone {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 25px 0px 15px 0px; }
+      body .container .header-zone .homie_logo {
+        width: 20%;
+        padding-bottom: 15px; }
+      body .container .header-zone .banner {
+        width: 100%; }
+    body .container .message-zone {
+      text-align: center;
+      padding: 15px 0px 15px 0px;
+      width: 550px; }
+      body .container .message-zone .message-greeting {
+        color: #666666;
+        font-size: 20px;
+        padding-bottom: 15px; }
+      body .container .message-zone .message-content {
+        padding-bottom: 50px; }
+        body .container .message-zone .message-content a {
+          color: #8D7AFF; }
+      body .container .message-zone .continue-button {
+        color: #8D7AFF;
+        border: solid #8D7AFF 1px;
+        padding: 8px 56px 8px 56px;
+        text-decoration: none; }
+    body .container .benefits-zone {
+      padding: 30px 0px 25px 0px;
+      text-align: center;
+      display: inline-flex;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      body .container .benefits-zone .benefits-title {
+        width: 100%;
+        color: #666666;
+        padding-bottom: 30px; }
+      body .container .benefits-zone .benefit img {
+        width: 125px;
+        padding-bottom: 30px; }
+      body .container .benefits-zone .benefit .benefit-description {
+        color: #434343;
+        font-size: 16px;
+        text-align: center; }
+
+/*# sourceMappingURL=index.css.map */

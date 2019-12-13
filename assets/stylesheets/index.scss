@@ -1,0 +1,79 @@
+body {
+  font-family: sans-serif;
+  letter-spacing: .5px;
+  word-spacing: 2px;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .header-zone {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 25px 0px 15px 0px;
+
+      .homie_logo {
+        width: 20%;
+        padding-bottom: 15px;
+      }
+      .banner{
+        width: 100%;
+      }
+    }
+    .message-zone {
+      text-align: center;
+      padding: 15px 0px 15px 0px;
+      width: 550px;
+
+      .message-greeting {
+        color: #666666;
+        font-size: 20px;
+        padding-bottom: 15px;
+      }
+      .message-content {
+        padding-bottom: 50px;
+
+        a {
+          color: #8D7AFF;
+
+        }
+      }
+      .continue-button {
+        color: #8D7AFF;
+        border: solid #8D7AFF 1px;
+        padding: 8px 56px 8px 56px;
+        text-decoration: none;
+      }
+    }
+    .benefits-zone {
+      padding: 30px 0px 25px 0px;
+      text-align: center;
+      display: inline-flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .benefits-title {
+        width: 100%;
+        color: #666666;
+        padding-bottom: 30px;
+
+      }
+      .benefit {
+        img {
+          width: 125px;
+          padding-bottom: 30px;
+        }
+        .benefit-description {
+          color: #434343;
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
