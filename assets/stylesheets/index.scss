@@ -1,0 +1,154 @@
+$grey: rgb(236, 236, 236);
+$purple: rgb(141, 122, 255);
+$green: rgb(67, 216, 146);
+$desktop: 376px;
+body {
+  font-family: sans-serif;
+  letter-spacing: .5px;
+  word-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .header {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+
+    div {
+      width: 14.25%;
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: solid $grey 3px;
+      color: $grey;
+      display: flex;
+      justify-content: center;
+      padding: 5px 3px 10px 3px;
+    }
+    .characteristics-div{
+      border-bottom: solid $purple 5px; 
+      color: $purple;
+    }
+  }
+  .container {
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: $desktop) {
+      box-shadow: none;
+      justify-content: space-between;
+    }
+
+    .rooms-counter {
+      width: 375px;
+      display: inline-flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      @media screen and (min-width: $desktop) {
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+        padding: 0px 220px 10px 220px;
+      }
+      .room-counter {
+        width: 375px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px 0px 10px 0px;
+
+        .counter-title {
+          width: 100%;
+          height: 22px;
+          color: rgb(74, 74, 74);
+          font-size: 17px;
+          padding-bottom: 10px;
+          padding-left: 25px;
+        }
+        .counter {
+          width: 110px;
+          height: 50px;
+          font-size: 30px;
+          border: solid $grey 1px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .sum-button {
+          height: 50px;
+          width: 50px;
+          border-radius: 2px;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+          color: $purple;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+        .subtraction-button {
+          height: 50px;
+          width: 50px;
+          border-radius: 2px;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+          color: $purple;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+      .next-button {
+        width: 325px;
+        height: 32px;
+        background-color: $purple;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+        margin: 20px 0px 20px 0px;
+        font-weight: bold;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width: $desktop) {
+          width: 350px;
+        }
+      }
+    }
+    .description-zone {
+      width: 300px;
+      height: 475px;
+      display: none;
+      box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+      margin-top: 10px;
+
+      @media screen and (min-width: $desktop) {
+        display: inline-block;
+      }
+
+      .description-zone-header {
+        background-color: $green;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+      }
+      .description-zone-title {
+        font-weight: bold;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center; 
+        margin: 20px 15px 0px 15px;
+        div {
+          font-size: 32px;
+        }
+      }
+      .description {
+        font-size: 14px;
+        margin: 15px;
+        padding: 10px 0px 30px 0px;
+        border-bottom: solid $grey 2px;
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+body {
+  font-family: sans-serif;
+  letter-spacing: .5px;
+  word-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  body .header {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around; }
+    body .header div {
+      width: 14.25%;
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: solid #ececec 3px;
+      color: #ececec;
+      display: flex;
+      justify-content: center;
+      padding: 5px 3px 10px 3px; }
+    body .header .characteristics-div {
+      border-bottom: solid #8d7aff 5px;
+      color: #8d7aff; }
+  body .container {
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+    display: flex;
+    justify-content: center; }
+    @media screen and (min-width: 376px) {
+      body .container {
+        box-shadow: none;
+        justify-content: space-between; } }
+    body .container .rooms-counter {
+      width: 375px;
+      display: inline-flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      @media screen and (min-width: 376px) {
+        body .container .rooms-counter {
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+          padding: 0px 220px 10px 220px; } }
+      body .container .rooms-counter .room-counter {
+        width: 375px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px 0px 10px 0px; }
+        body .container .rooms-counter .room-counter .counter-title {
+          width: 100%;
+          height: 22px;
+          color: #4a4a4a;
+          font-size: 17px;
+          padding-bottom: 10px;
+          padding-left: 25px; }
+        body .container .rooms-counter .room-counter .counter {
+          width: 110px;
+          height: 50px;
+          font-size: 30px;
+          border: solid #ececec 1px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        body .container .rooms-counter .room-counter .sum-button {
+          height: 50px;
+          width: 50px;
+          border-radius: 2px;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+          color: #8d7aff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer; }
+        body .container .rooms-counter .room-counter .subtraction-button {
+          height: 50px;
+          width: 50px;
+          border-radius: 2px;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+          color: #8d7aff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer; }
+      body .container .rooms-counter .next-button {
+        width: 325px;
+        height: 32px;
+        background-color: #8d7aff;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+        margin: 20px 0px 20px 0px;
+        font-weight: bold;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        @media screen and (min-width: 376px) {
+          body .container .rooms-counter .next-button {
+            width: 350px; } }
+    body .container .description-zone {
+      width: 300px;
+      height: 475px;
+      display: none;
+      box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+      margin-top: 10px; }
+      @media screen and (min-width: 376px) {
+        body .container .description-zone {
+          display: inline-block; } }
+      body .container .description-zone .description-zone-header {
+        background-color: #43d892;
+        color: white;
+        padding: 10px;
+        font-weight: bold; }
+      body .container .description-zone .description-zone-title {
+        font-weight: bold;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 15px 0px 15px; }
+        body .container .description-zone .description-zone-title div {
+          font-size: 32px; }
+      body .container .description-zone .description {
+        font-size: 14px;
+        margin: 15px;
+        padding: 10px 0px 30px 0px;
+        border-bottom: solid #ececec 2px; }
+
+/*# sourceMappingURL=index.css.map */
