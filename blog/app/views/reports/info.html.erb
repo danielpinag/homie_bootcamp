@@ -1,0 +1,160 @@
+
+<header>
+  <div class="header-container">
+    <div class="back-button">
+      <%= image_tag("back") %>
+    </div>
+    <div class="homie-logo">
+      <%= image_tag("homie-logo") %>
+    </div>
+    <div class="user-image">
+      <p>
+        <%= image_tag("face-picture", class: "round-picture") %>
+      </p>
+    </div>
+    <div class="face-picture-header">
+      <%= image_tag("face-picture", class: "round-picture") %>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="report sections">
+    <div class="image-icon">
+      <%= image_tag("homie-icon", class: "homie-icon") %>
+    </div>
+    <div class="report-container">
+      <div class="report-title">
+        Reporte de Inquilino
+      </div>
+      <div class="date-notes">
+        Fecha: julio 16 2019 Válclasso hasta: octubre 16 2019
+        <p>
+          Calculado con Homie Technology que tiene un
+          rango de 0 a 1500
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="information">
+    <div class="evaluation sections">
+      <div class="statistics">
+        <div class="statistics-container">
+          <div class="circle-grade">
+            <%= image_tag("grade-circle") %>
+            <div class="score-circle-grade">1052</div>
+          </div>
+          <div class="score">
+            <div class="score-left">0</div>
+            <div class="score-right">1500</div>
+          </div>
+          <div class="bar-grade">
+            <%= image_tag("grade") %>
+          </div>
+          <div class="grade">
+            <div>Malo</div>
+            <div>Medio</div>
+            <div>Bueno</div>
+            <div>Excelente</div>
+          </div>
+          <div class="grade-title">Este puntaje es Bueno</div>
+          <div class="grade-info">
+            Rango superior al 43% de los inquilinos de México
+          </div>
+        </div>
+      </div>
+      <div class="evaluation-results">
+        <ul class="evaluation-list">
+          <li>Indentificación Otorgada: <b>Verificada</b></li>
+          <li>Nivel Socioeconómico: <b>NA</b></li>
+          <li>Listas negras: <b>No</b></li>
+          <li>Prevención de lavado de dinero: <b>No disponible</b></li>
+          <li>Redes sociales vinculadas: <b>Ninguna</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tenant-data">
+      <div class="tenant-address sections">
+        <div class="contact-image">
+          <%= image_tag("face-picture", class: "face-picture") %>
+        </div>
+        <div class="contact-details">
+          <p class="name-contact"> Esteban Manuel Lopez Ramirez </p>
+          <p class="contact-address"> centro, 123, Piso 12, Depa 123, Centro, Yucatán </p>
+          <p class="payment-amount"> $44,000.00 </p>
+        </div>
+      </div>
+      <div class="tenant-skills sections">
+        <div class="container-tenant-skills">
+          <div class="icon-tenant-skills">
+            <%= image_tag("job") %>
+            <div class="text-tenant-skills">
+              / <strong>Empleo</strong>
+            </div>
+          </div>
+          <div class="icon-tenant-skills">
+            <%= image_tag("work-specialty") %>
+            <div class="text-tenant-skills">
+              Especialidad-o-diplomado / <strong>UTM</strong>
+            </div>
+          </div>
+          <div class="icon-tenant-skills">
+            <%= image_tag("coins") %>
+            <div class="text-tenant-skills">
+              Ingresos verificados <strong>No disponible</strong>
+            </div>
+          </div>
+          <div class="icon-tenant-skills">
+            <%= image_tag("email") %>
+            <div class="text-tenant-skills">
+              <strong>dev+victor126inquilino@homie.mx</strong>
+            </div>
+          </div>
+          <div class="icon-tenant-skills">
+            <%= image_tag("phone") %>
+            <div class="text-tenant-skills">
+              <strong>9992023842</strong>
+            </div>
+          </div>
+          <div class="icon-tenant-skills">
+            <%= image_tag("people-group", class: "icon-group-tenant-skills") %>
+            <div class="text-tenant-skills">
+              Referencia: <strong>Lorena Esther Manzanero Rodriguez</strong>
+              </br>
+              centro, 123, Centro, Yucatán, CP 97000
+            </div>
+          </div>
+          <div class="icon-tenant-skills">
+            <%= image_tag("people-group", class: "icon-group-tenant-skills") %>
+            <div class="text-tenant-skills">
+              Referencia: <strong>Catalina Esmeralda Estrada Castro</strong>
+              </br>
+              centro, 123, Petrolera, Veracruz, CP 96500
+            </div>
+          </div>
+          <div class="icon-tenant-skills">
+            <%= image_tag("people-group", class: "icon-group-tenant-skills") %>
+            <div class="text-tenant-skills">
+              Referencia: <strong>Luis Manuel Castillo Lopez</strong>
+              </br>
+              centro, 123, Centro, Yucatán, CP 97000
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-container sections">
+    <div class="text-footer">
+      <p> Nuestra tecnología nos permite rentar tu inmueble al <b>mejor inquilino,</b> sin <b>ningún riesgo</b> y en <b> tiempo record.</b></p>
+      <div class="text-img">
+        <%= image_tag("validated-homie") %>
+      </div>
+    </div>
+    <div class="download-button">
+      <%= image_tag("download") %> Guardar
+    </div>
+  </div>
+</footer>
+<%= stylesheet_link_tag 'reports'%>
