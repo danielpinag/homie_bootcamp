@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/dingxizheng/mongoid-enum.git
+  revision: d6677adb8a187bb8f6285cc84eaffa11aa51c24d
+  specs:
+    mongoid-enum (0.4.0)
+      mongoid
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -247,6 +254,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   mongoid (~> 6.0)
+  mongoid-enum!
   mongoid-rspec
   puma (~> 3.11)
   rails (~> 5.2.4)

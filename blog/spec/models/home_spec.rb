@@ -25,5 +25,4 @@ RSpec.describe Home, type: :model do
     home = Home.new(owner: owner, price: 12000.00, extra_service: 12000.00)
     expect(home.total_amount == home.price + home.extra_service)
   end
-
 end
