@@ -1,7 +1,8 @@
 class Home
   include Mongoid::Document
+  include Mongoid::Enum
 
-  before_save :get_total_amount
+  before_save :set_total_amount
 
   field :price, type: Float
   field :extra_service, type: Float
@@ -14,7 +15,7 @@ class Home
   has_many :rents
   belongs_to :owner
 
-  def get_total_amount
+  def set_total_amount
     self.total_amount = price + extra_service
   end
 end
