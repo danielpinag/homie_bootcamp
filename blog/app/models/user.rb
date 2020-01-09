@@ -12,4 +12,8 @@ class User
 
   has_many :rents
   has_one :owner
+
+  def full_name
+    name + last_name
+  end
 end
