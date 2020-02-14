@@ -4,6 +4,7 @@ class Home
 
   before_save :set_total_amount
 
+  field :title, type: String
   field :price, type: Float
   field :extra_service, type: Float
   field :total_amount, type: Float
@@ -15,6 +16,8 @@ class Home
   validates_presence_of :price, :extra_service
 
   has_many :rents
+  has_one :outstanding
+  has_one :listing
   belongs_to :owner
 
   def set_total_amount
