@@ -31,20 +31,29 @@ class Home::Listing
   end
 
   def self.different_to_outstanding
-    homes_id = Home.pluck(:id)
+    attributes_list = Home.pluck(:id, :title)
     should_not_been_sent = []
     should_been_sent = []
 
-    homes_id.each do |home_id|
-      outstanding = Home::Listing::Outstanding.find_by(home_id: home_id)
-      listing = Home::Listing.find_by(home_id: home_id)
+    attributes_list.each do |attributes|
+
+      if !Home::Listing::Outstanding.where(home_id: attributes[0]).exists?
+        listing = Home::Listing.find_by(home_id: attributes[0])
+        next unless MERCADO_LIBRE_TYPES.any? { |type| listing.publish_xml_or_response.include? "#{type}," }
+        next should_not_been_sent.push(attributes[1])
+      end
+
+      next should_been_sent.push(attributes[1]) if !Home::Listing.where(home_id: attributes[0]).exists?
+
+      outstanding = Home::Listing::Outstanding.find_by(home_id: attributes[0])
+      listing = Home::Listing.find_by(home_id: attributes[0])
 
       next if listing.publish_xml_or_response =~ /#{outstanding.outstanding_type},/
 
       if MERCADO_LIBRE_TYPES.any? { |type| listing.publish_xml_or_response.include? "#{type}," }
-        should_not_been_sent.push(listing.id.to_s)
+        should_not_been_sent.push(attributes[1])
       else
-        should_been_sent.push(listing.id.to_s)
+        should_been_sent.push(attributes[1])
       end
     end
     puts "Los que no se debieron enviar como Gold Premium y Gold pero se enviaron de esa manera son #{should_not_been_sent}"
